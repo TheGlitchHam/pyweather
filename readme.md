@@ -8,6 +8,6 @@ requests
 
 ### setup
 
-python<3> -m venv < envname >
-pip install
-python<3> weather.py < city name//empty >
+- python<3> -m venv < envname >
+- pip install
+- python<3> weather.py < city name//empty >
