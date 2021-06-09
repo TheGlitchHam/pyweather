@@ -1,7 +1,10 @@
 import sys, time, requests
 
 while True:
-    resp = requests.get(f'https://wttr.in/{sys.argv[1].replace(" ", "+")}')
+    resp = ""
+    if len(sys.argv) == 2:
+        resp = requests.get(f'https://wttr.in/{sys.argv[1].replace(" ", "+")}')
+    else: 
+        resp = requests.get('https://wttr.in')
     print(resp.text)
     time.sleep(600) #in secs
-    print("Restarting")
