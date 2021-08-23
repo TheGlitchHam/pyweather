@@ -7,4 +7,4 @@ while True:
     else: 
         resp = requests.get('https://wttr.in')
     print(resp.text)
-    time.sleep(600) #in secs
+    time.sleep(3600) #in secs
